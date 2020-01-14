@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="style/style.css" media="all"/>
+    <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="scripts/slideshow.js" type="text/javascript"></script>
+    <meta charset = "UTF-8"/>
+
+    <title>Mainland China Student's Association</title>
+
+    </head>
+
+    <body>
+
+    <header>
+
+        <a href="index.html"> <img class="logo" src="images/logo.png" alt="MCSA Logo"></a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="eboard.html">E-Board</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="apply.html">Apply</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h2>Events</h2>
+        <hr/>
+
+        <p class="event-intro, gradient"> MCSA stays an active part of campus through the many events we host. The root goal of all our events is always to connect students on campus. </p>
+
+
+          <!-- photos taken by Richard Chen, MCSA Member, edits made by Emily Jacobsson for this class -->
+        <div class="events">
+            <img class="event" src="images/professional-event.jpg" alt="One of MCSA's Professional Events"/>
+            <img class="event" src="images/cultural-event.jpg" alt="One of MCSA's Cultural Events"/>
+            <img class="event" src="images/social-event.jpg" alt="One of MCSA's Social Events"/>
+        </div>
+        <cite>All pictures taken by Richard Chen, MCSA Member</cite>
+
+
+        <h2> Past Events </h2>
+        <hr/>
+        <!-- code written referencing lecture 24 code -->
+        <div class="slideshow">
+            <!-- photos for slide show taken by Richard Chen, MCSA Member -->
+            <figure class="slideshow">
+                <img id="slideshow-event" alt="Members at Taste of China Event" src="images/event-path01.JPG"/>
+                <cite>All pictures taken by Richard Chen, MCSA Member</cite>
+                <figcaption class="gradient">Some of our members happily serving dumplings out our annual Taste of China event</figcaption>
+            </figure>
+
+            <div class="classbutton">
+                <button id="slideshow-left"> &#10094;</button>
+                <button id="slideshow-right"> &#10095;</button>
+            </div>
+        </div>
+
+        <!-- onclick="path(-1)" "caption(-1)" -->
+    </main>
+
+    <footer>
+        <hr>
+        <div class="handle">
+            <img class="social" src="images/facebook.png" alt="Facebook Logo">
+            <p>@CornellMCSA</p>
+        </div>
+
+        <div class="handle">
+            <img class="social" src="images/instagram.png" alt="Instagram Logo">
+            <p>@cornellmcsa</p>
+        </div>
+
+        <div class="handle">
+            <img class="social" src="images/wechat.png" alt="WeChat Logo">
+            <p>@CornellMCSA</p>
+        </div>
+
+        <div>
+          <p>
+          <cite class='cite'>Icons from <a href="https://www.flaticon.com/">FlatIcon</a></cite>
+        </p>
+      </div>
+
+    </footer>
+    </body>
+
+</html>

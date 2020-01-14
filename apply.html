@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="style/style.css" media="all"/>
+    <script src="scripts/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="scripts/validation.js" type="text/javascript"></script>
+    <meta charset = "UTF-8"/>
+
+    <title>Mainland China Student's Association</title>
+
+    </head>
+
+    <body>
+
+    <header>
+
+        <a href="index.html"> <img class="logo" src="images/logo.png" alt="MCSA Logo"></a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="eboard.html">E-Board</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="apply.html">Apply</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <h2>Recruitment Timeline</h2>
+        <hr/>
+         <!-- Made for this assignment by Sabrina Chong -->
+         <picture>
+            <source media="(max-width: 600px)" srcset="images/mobilerecruitmenttimeline.png">
+            <source media="(min-width: 601px)" srcset="images/recruitmenttimeline.png">
+            <img class="recruitment" src="images/recruitmenttimeline.png" alt="Recruitment Timeline">
+          </picture>
+
+         <h2>Qualities We Love </h2>
+         <hr/>
+         <p class="members"> Our members are: <em>Top</em> students from various majors with<em> diverse</em> backgrounds and <em>international </em>vision.</p>
+
+         <h2> Apply Here! </h2>
+         <hr/>
+    <section>
+        <form id="knowMore" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2019fa/submit.php" novalidate>
+        <div class="formflex">
+            <div>
+                <!-- Source: lab 10 Kyle Harms -->
+                <label for="userName">Name: </label>
+                <input id="userName" name="userName" placeholder="Your Name" required/>
+                <span class="errorFeedback hidden" id="userNameError">
+                Please write your name (First Name Last Name)</span>
+            </div>
+
+            <div>
+                <label for="userNetID">NetID: </label>
+                <input placeholder="Your NetID" id="userNetID" name="userNetID" required/>
+                <span class="errorFeedback hidden" id="NetIDError">
+                A valid NetID is required (ex: sc2645). </span>
+            </div>
+
+            <div>
+                <label class="Year" for="Year">Year:</label>
+                <select class="Year" id="Year" name="Year" required>
+                <!-- Source: https://stackoverflow.com/questions/8605516/default-select-option-as-blank -->
+                    <option disabled selected value> -- select an option -- </option>
+                    <option value="Freshman">Freshman</option>
+                    <option value="Sophomore">Sophomore </option>
+                    <option value="Junior">Junior</option>
+                    <option value="Senior">Senior</option>
+                </select>
+                <span class="errorFeedback hidden" id="YearError">
+                    Please choose which year you are in.</span>
+            </div>
+
+            <div>
+                <label for="story">Tell us your story:</label>
+                <textarea id="story" name="story" rows="5" cols="33"></textarea>
+            </div>
+
+            <p><button type="submit" class="submit">Submit</button></p>
+        </div>
+        </form>
+        </section>
+
+    </main>
+
+    <footer>
+      <hr>
+        <div class="handle">
+            <img class="social" src="images/facebook.png" alt="Facebook Logo">
+            <p>@CornellMCSA</p>
+        </div>
+
+        <div class="handle">
+            <img class="social" src="images/instagram.png" alt="Instagram Logo">
+            <p>@cornellmcsa</p>
+        </div>
+
+        <div class="handle">
+            <img class="social" src="images/wechat.png" alt="WeChat Logo">
+            <p>@CornellMCSA</p>
+        </div>
+
+      <div>
+        <p>
+        <cite class='cite'>Icons from <a href="https://www.flaticon.com/">FlatIcon</a></cite>
+      </p>
+    </div>
+    </footer>
+    </body>
+
+    </html>
